@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+#primero{
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lista{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 100px;
+}
+
+.servicios{
+    width: 24%;
+    padding: 28px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: white;
+}
+
+.diseño{
+    background: #5055df ;
+}
+
+.marketing{
+    background: #40a8fa;
+}
+
+.logos{
+    background: #5055df;
+}
+
+.consulta{
+    background: #40a8fa;
+}
+
+.servicios h4{
+    font-size: 30px;
+}
