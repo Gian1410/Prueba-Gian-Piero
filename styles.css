@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+:root {
+    
+}
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url(img/background-img.jpg);
+    background-size: cover;
 }
+
 
 *{
     box-sizing: border-box;
@@ -11,9 +17,12 @@ body{
     padding: 0;
 }
 
-p{
-    font-size: 20px;
+.icon-home {
+    width: 25px;
+    margin-left: 20px;
 }
+
+
 
 li{
     list-style: none;
