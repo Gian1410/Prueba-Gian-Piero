@@ -1,34 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portafolio</title>
+    <!-- usa el normalize css -->
+    <!-- implementar prefijos autoprfixer css online -->
+    <!-- para los prefijos puedes usar prepros -->
+    <!-- lazi doaling nativi agregando "loading = "lazi" -->
+    <!-- para poder tener un mejor SEO mejora la semantica y usa menos divs y usa las etiquetas semanticas -->
+    <!-- accesibilidad puedes usar tabindex para que el usuario se pueda desplazar con el tabulador -->
 </head>
 <body>
+<div id="page">
 
-    <div class="menu">
-        <span class="icon-home"> <a href="index.html"><img src="icons/home.svg" alt="Inicio"></a></span>
-
-        <nav>
-            <ul class="lista">
-                <li><a href="sobre-mi/sobre-mi.html">Sobre Mi</a></li>
-                <li><a href="/Servicios/servicios.html">Servicios</a></li>
-                <li><a href="Por-qué-trabajar-conmigo/trabajo.html">Mis trabajos</a></li>
-                <li><a href="">¿Por que trabajar conmigo?</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
     </div>
+    <header>
+        <div>
+            <nav class="menu">
+                <ul class="lista">
+                    <li><a tabindex="1" href="#post-2">Servicios</a></li>
+                    <li><a tabindex="2" href="#post-1">Sobre Mi</a></li>
+                    <li><a tabindex="3" href="#post-3">Mis trabajos</a></li>
+                    <li><a tabindex="4" href="#post-4">¿Por que trabajar conmigo?</a></li>
+                    <li><a tabindex="5" href="">Blog</a></li>
+                    <li><a tabindex="6" href="">Contacto</a></li>
+                </ul>
+            </nav>
 
-    <div class="titular">
-        <h1>Gian Piero Castro</h1>
-        <h2>Diseñador & Desarrollador Web</h2>
-        <a class="link" href="#" target="_blank">VER MIS TRABAJOS</a>
-    </div>
+        </div>
 
+        <div class="titular">
+            <h1>Gian Piero Castro</h1>
+            <h2>Diseñador & Desarrollador Web</h2>
+            <button class="efecto-de-boton">
+                <a tabindex="7"  href="#post-3">VER MIS TRABAJOS</a>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section tabindex="8" id="post-1" class="about-me">
+            
+                <h2 class="sub-title">Sobre mi</h2>
+                
+                <div class="contenedor-sobremi">
+                    <img loading="lazy" class="me" src="img/yo.jpg" alt="Gian Piero Castro Vilca" title="Gian Piero">
+
+                    <div class="parrafo-boton">
+                        <!-- separar con la etiqueta <p> -->
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nobis! Aspernatur a ratione et impedit laborum debitis inventore porro, amet necessitatibus perferendis. Fugit consequuntur dolore voluptatum numquam rem. Dolorem, ratione.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure facilis ullam accusamus deserunt architecto, nam rem, sit dolore cum quo voluptate aliquid tempora, laboriosam velit ipsam quae at aliquam eveniet.
+                        </p>
+                    </div>
+            </div>
+        </section>
+
+        <section tabindex="9" id="post-2" class="services">
+                <h2>Servicios</h2>
+            <div class="contenedor-servicios">    
+                    <div class="servicios diseño">
+                        <h4>Diseño Grafico</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                    </div>
+
+                    <div class="servicios marketing">
+                        <h4>Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                    </div>
+
+                    <div class="servicios logos">
+                        <h4>Diseño de Logo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                    </div>
+
+                    <div class="servicios consulta">
+                        <h4>Consultoria</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                    </div>
+            </div>
+        </section>
+
+        <section tabindex="10" id="post-3" class="trabajos">
+            <h2>Proyectos</h2>
+            <div class="trabajos-contenedor">    
+                <div class="servicios diseño">
+                        <h4>Primer Proyecto</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                    </div>
+
+                <div class="servicios marketing">
+                        <h4>Proyecto 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                </div>
+
+                <div class="servicios logos">
+                        <h4>Proyecto 3</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat cumque a labore rerum unde libero porro corrupti commodi ad consequuntur laborum nihil, ducimus vel ipsum reprehenderit explicabo veritatis molestiae.</p>
+                        <!-- falta icono -->
+                </div>
+            </div>
+        </section>
+
+        <section tabindex="11" id="post-4" class="por-que-trabajar-conmigo">
+            <div class="contenedor">
+                <h3>¿Por qué trabajar conmigo?</h3>
+                <div class="contenedor-porque">
+                    <div class="porque-singular">
+                        <img loading="lazy" src="" alt="velocidad">
+                        <h4>Velocidad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus dignissimos culpa illo nisi ducimus optio modi? Ducimus, illo molestias eaque sunt fuga adipisci laborum natus, dolores consequuntur provident quisquam.</p>
+                    </div>
+
+                    <div class="porque-singular">
+                        <img loading="lazy" src="" alt="Mantimiento">
+                        <h4>Mantenimiento</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus dignissimos culpa illo nisi ducimus optio modi? Ducimus, illo molestias eaque sunt fuga adipisci laborum natus, dolores consequuntur provident quisquam.</p>
+                    </div>
+
+                    <div class="porque-singular">
+                        <img loading="lazy" src="" alt="responsive">
+                        <h4>Responsive</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus dignissimos culpa illo nisi ducimus optio modi? Ducimus, illo molestias eaque sunt fuga adipisci laborum natus, dolores consequuntur provident quisquam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer tabindex="12">
+        <section>
+            
+        </section>
+    </footer>
+</div>
 </body>
 </html>

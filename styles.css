@@ -1,47 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-:root {
-    
-}
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-image: url(img/background-img.jpg);
-    background-size: cover;
-}
 
+html{
+    scroll-behavior: smooth;
+}
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.icon-home {
-    width: 25px;
-    margin-left: 20px;
+img{
+    background-color: azure;
 }
 
-
-
-li{
-    list-style: none;
-    margin-right: 25px;
-}
-
-#primero{
-    font-size: 30px;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.lista{
-    display: flex;
+header{
+    background: url(img/background-img.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
 a{
@@ -49,25 +29,165 @@ a{
     color: black;
 }
 
-.titular{
-    text-align: center;
-    margin-top: 200px;
+li{
+    list-style: none;
+    margin-right: 25px;
 }
 
-h1{
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.titular,h1{
+    text-align: center;
+    margin-top: 200px;
     font-size: 60px;
 }
 
-h2{
-    font-size: 25px;
+
+.titular,h2{
+    font-size: 20px;
     margin-bottom: 40px;
 }
 
-.link{
+button{
     font-size: 14px;
-    background: #5cb8ff;
-    padding: 20px;
+    background-color: #5cb8ff;
     color: white;
     padding: 20px 30px 20px 30px;
+    border-color: transparent;
+}
+
+.efecto-de-boton{
+    background-position: center;
+    transition: background 0.8s;
+}
+.efecto-de-boton:hover{
+    background-color: #60d9fa;
+}
+.efecto-de-boton:active{
+    background-color: #b2d3f1;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* ABOUT ME */
+
+.about-me{
+    align-items:  flex-end;
+}
+
+
+.about-me h2 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.me{
+    display: flex;
+    height: 60vh;
+    border-radius: 20px;
     
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-boton{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    align-items: center;
+}
+
+/* SERVICES */
+.services {
+    margin-top: 90px;
+}
+
+
+.services > h2 {
+    text-align: center;
+}
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.contenedor-servicios > div{
+    height: 500px;
+    padding: 28px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* TRABAJOS */
+
+.trabajos {
+    margin-top: 100px;
+}
+
+
+.trabajos h2 {
+    text-align: center;
+}
+
+.trabajos-contenedor{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.trabajos-contenedor > div{
+    height: 450px;
+    padding: 28px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* POR QUE TRABAJAR CONMIGO */
+
+.contenedor-porque{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contenedor-porque h4{
+    font-size: 20px;
+}
+
+.contenedor h3{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contenendor-porque p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.porque-singular{
+    width: 15%;
+    margin-top: 100px;
 }
